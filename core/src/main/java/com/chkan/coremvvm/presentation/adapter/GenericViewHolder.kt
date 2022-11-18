@@ -1,0 +1,10 @@
+package com.chkan.coremvvm.presentation.adapter
+
+import android.view.View
+import androidx.recyclerview.widget.RecyclerView
+
+
+abstract class GenericViewHolder<T : ItemUi>(view: View) : RecyclerView.ViewHolder(view) {
+
+    abstract fun bind(item: T)
+}
